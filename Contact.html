@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport"content="width=device-width,initial-scale=1.0">
+        <title>website design</title>
+        <link rel="stylesheet" href="index.css">
+        <ink rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,500;1,600&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+
+        <section class="sub-header">
+            <nav>
+                <a href="index.html"><img src="Images/logo.png"></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="About.html">ABOUT US</a></li>
+                        <li><a href="Testimonials.html">TESTIMONIALS</a></li>
+                        <li><a href="Gallery.html">GALLERY</a></li>
+                        <li><a href="Contact.html">CONTACT US</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav>
+            <h1>CONTACT US</h1>
+        </section>
+
+        <section class="location">
+               <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d438476.5562956489!2d75.61230515979706!3d13.90090574923392!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bbba8d0ec620495%3A0x5589d733c2761a17!2sShivamogga%2C%20Karnataka!5e0!3m2!1sen!2sin!4v1629874694174!5m2!1sen!2sin" 
+               width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </section>
+
+        <section class="contact-us">
+            <div class="row">
+
+                <div class="contact-col">
+                   <div>
+                     <i class="fa fa-home"></i> 
+                     <span>
+                        <h4>XYZ Road, Whitefield</h4>
+                        <p>Shimoga, Karnataka, IN</p>
+                     </span>
+                   </div>
+                   <div>
+                      <i class="fa fa-phone"></i> 
+                      <span>
+                        <h4>+91 0123456789</h4>
+                        <p>Monday to Saturday, 10AM to 6PM</p>
+                      </span>
+                   </div>
+                   <div>
+                      <i class="fa fa-envelope-o"></i> 
+                      <span>
+                        <h4>abc21@gmail.com</h4>
+                        <p>Email us your query</p>
+                      </span>
+                    </div>
+               </div>
+           
+               <div class="contact-col">
+                   <form action="contactus.php" method="POST">
+                       <input type="text" placeholder="Enter Your Name" name="name" required>
+                    <input type="email" placeholder="Enter Email Address" name="email" required>
+                    <input type="text" placeholder="Enter Your Phone Number" name="phno" required>
+                    <textarea rows="8" placeholder="Message" required name="message"></textarea>
+                    <input type="submit" value="Submit" name="submit" id="submit">
+                  </form>
+               </div>
+        </div>
+        </section>
+
+        <footer>
+            <div class="row">
+                <div class="col">
+                    <img src="Images/logo.png" class="logo">
+                    <p>A group of Enthusiasts now have a vision of training students towards their goals.</p>
+                </div>
+                <div class="col">
+                    <h5>Office <div class="underline"><span></span></div></h5>
+                    <p>XYZ Road</p>
+                    <p>Whitefield, Shimoga</p>
+                    <p>Karnataka, PIN 577201,India</p>
+                    <p class="email-id">abc21@gmail.com</p>
+                    <h6>+91 - 0123456789</h6>
+                </div>
+                <div class="col">
+                    <h5>Links <div class="underline"><span></span></h5>
+                    <ul>
+                        <li><a href="">Home</a></li>
+                        <li><a href="">About Us</a></li>
+                        <li><a href="">Testimonials</a></li>
+                        <li><a href="">Gallery</a></li>
+                        <li><a href="">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h5>Newsletter <div class="underline"><span></span></h5>
+                    <form>
+                        <i class="fa fa-envelope"></i>
+                        <input type="email" placeholder="Enter your email id" required>
+                        <button type="submit"><i class="fa fa-arrow-right"></i></button>
+                    </form>
+                    <div class="social-icons">
+                        <i class="fa fa-whatsapp"></i>
+                        <i class="fa fa-instagram"></i>
+                        <i class="fa fa-facebook-f"></i>
+                        <i class="fa fa-twitter"></i>
+                        <i class="fa fa-linkedin"></i>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <p1 class="copyright">Quient Trainings Pvt Ltd &copy; 2021 - All Rights Reserved</p1>
+        </footer>
+
+        <script>
+            var navLinks = document.getElementById("navLinks");
+              function showMenu() {
+                  navLinks.style.right="0";
+                  }
+              function hideMenu() {
+                  navLinks.style.right="-200px";
+                  }
+
+        </script>
+
+    </body>
+</html>

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport"content="width=device-width,initial-scale=1.0">
+        <title>website design</title>
+        <link rel="stylesheet" href="index.css">
+        <ink rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,500;1,600&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+
+        <section class="sub-header">
+            <nav>
+                <a href="index.html"><img src="Images/logo.png"></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="About.html">ABOUT US</a></li>
+                        <li><a href="Testimonials.html">TESTIMONIALS</a></li>
+                        <li><a href="Gallery.html">GALLERY</a></li>
+                        <li><a href="Contact.html">CONTACT US</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav>
+            <h1>Collections</h1>
+        </section>
+
+        <section class="course">
+            <h1>Important Topics</h1>
+            <p>Topics for competetive exams</p>
+
+            <div class="row">
+                <div class="course-col">
+                    <img src="Images/v1.png">
+                    <h3>English</h3>
+                    <p>English is a West Germanic language of the Indo-European language family, originally spoken by the inhabitants of early medieval England.
+                        It is the most commonly used language around the world.
+                    </p>
+                </div>
+
+                <div class="course-col">
+                    <img src="Images/v2.png">
+                    <h3>Aptitude</h3>
+                    <p> Aptitude is inborn potential to do certain kinds of work whether developed or undeveloped. 
+                        Ability is developed knowledge, understanding, learnt or acquired abilities or attitude. </p>
+                </div>
+
+                <div class="course-col">
+                    <img src="Images/v3.png">
+                    <h3>Reasoning</h3>
+                    <p>Reasoning is associated with the act of thinking and cognition, and involves one's intellect. 
+                       The field of logic studies the ways in which humans can use formal reasoning to produce logically valid arguments.</p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="course-col">
+                    <img src="Images/v4.png">
+                    <h3>General knowledge</h3>
+                    <p>General knowledge is information that has been accumulated over time through various mediums.
+                        General knowledge is an essential component of crystallized intelligence. </p>
+                </div>
+
+                <div class="course-col">
+                    <img src="Images/v5.png">
+                    <h3>Computer fundamentals</h3>
+                    <p>A Computer can be defined or described as a machine or device which can work with information such as to store, retrieve, manipulate, and process data.</p>
+                </div>
+
+                <div class="course-col">
+                    <img src="Images/v6.png">
+                    <h3>Current affairs</h3>
+                    <p>Current affairs is a genre of broadcast journalism where the emphasis is made on the detailed analysis and discussion of the news stories 
+                        that have recently occured/happend or are ongoing at the time of broadcast.</p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="course-col">
+                    <img src="Images/v7.png">
+                    <h3>Management</h3>
+                    <p>Management is the act of getting people together to accomplish desired goals and objectives using available resources efficiently and effectively.</p>
+                </div>
+
+                <div class="course-col">
+                    <img src="Images/v8.png">
+                    <h3>Geography</h3>
+                    <p>Geography is a field of science devoted to the study of the lands, features, inhabitants, and phenomena of the Earth and planets.</p>
+                </div>
+
+                <div class="course-col">
+                    <img src="Images/v9.png">
+                    <h3>History</h3>
+                    <p>History is the study of change and development in society over time.History is a process of enquiry where we conduct or investigate
+                       about the events that has already occured</p>
+                </div>
+            </div>
+
+        </section>
+
+        <footer>
+            <div class="row">
+                <div class="col">
+                    <img src="Images/logo.png" class="logo">
+                    <p>A group of Enthusiasts now have a vision of training students towards their goals.</p>
+                </div>
+                <div class="col">
+                    <h5>Office <div class="underline"><span></span></div></h5>
+                    <p>XYZ Road</p>
+                    <p>Whitefield, Shimoga</p>
+                    <p>Karnataka, PIN 577201,India</p>
+                    <p class="email-id">abc21@gmail.com</p>
+                    <h6>+91 - 0123456789</h6>
+                </div>
+                <div class="col">
+                    <h5>Links <div class="underline"><span></span></h5>
+                    <ul>
+                        <li><a href="">Home</a></li>
+                        <li><a href="">About Us</a></li>
+                        <li><a href="">Testimonials</a></li>
+                        <li><a href="">Gallery</a></li>
+                        <li><a href="">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h5>Newsletter <div class="underline"><span></span></h5>
+                    <form>
+                        <i class="fa fa-envelope"></i>
+                        <input type="email" placeholder="Enter your email id" required>
+                        <button type="submit"><i class="fa fa-arrow-right"></i></button>
+                    </form>
+                    <div class="social-icons">
+                        <i class="fa fa-whatsapp"></i>
+                        <i class="fa fa-instagram"></i>
+                        <i class="fa fa-facebook-f"></i>
+                        <i class="fa fa-twitter"></i>
+                        <i class="fa fa-linkedin"></i>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <p1 class="copyright">Quient Trainings Pvt Ltd &copy; 2021 - All Rights Reserved</p1>
+        </footer>
+
+        
+
+        <script>
+            var navLinks = document.getElementById("navLinks");
+              function showMenu() {
+                  navLinks.style.right="0";
+                  }
+              function hideMenu() {
+                  navLinks.style.right="-200px";
+                  }
+
+        </script>
+
+    </body>
+</html>
